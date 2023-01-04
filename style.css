@@ -269,8 +269,8 @@ nav ul li a:hover::after{
 .portfolio-page.project-row{
     display: flex;
     align-items:top;
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 15px;
     margin-bottom: 15px;
     height:250px;
