@@ -371,7 +371,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
     border:2px solid #ff004f;
     border-radius: 5px;
-    width: 50%;
+    width: 100%;
 }
 
 .project-description img{
