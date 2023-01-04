@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bell Assignment</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <nav>
+            <img src="../images/bu_logo.png" class="logo" >
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../rmanek_portfolio_about_me.html">About Me</a></li>
+                <li><a href="../rmanek_portfolio_resume.html">Resume</a></li>
+                <li><a href="../rmanek_PortfolioLandingPage.html">Portfolio</a></li>
+                <li><a href="../rmanek_portfolio_contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- PAGE HEADER -->
+    <div id="project-header">
+        <h1> Bell Assignment </h1>
+        <img src="../images/project_BigBellyAssignment/BigBelly_Background.jpg" width="100%">
+
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div class="project-summary row">
+        <div class="project-summary text">
+            <h2> Summary </h2>
+            <p> This assignment focused on recreating a CAD model of a bell, based on a sketch of its cross sectional profile.</p>
+            <br>
+            <p> From there,  a brass material was applied,  and FEA frequency analysis was conducted on the model. From the analysis multiple frequencies were obtained. These are frequencies that would occur for the given bell given various forms of deformation (i.e. it being hit and ringing). </p>
+            <br>
+            <p>These frequencies were then input into a script in MATLAB, and adjusted based on the following equation seen on the right, where:</p>
+            <ul style="margin-left: 25px;">
+                <li> <b>A</b> = Amplitude of frequency </li>
+                <li> <b>alpha</b> = Dissipation Factor </li>
+                <li> <b>omega</b> = Frequency </li>
+                <li> <b>t</b> = Time </li>
+            </ul>
+            <br>
+            <p>Multiple iterations of the code were run in order to fine tune a point where the audio gave the impression of a bell - which can be heard below.</p>
+            <br>
+            <p> <i> All files for the assignment can be found below.</i></p>
+        </div>
+        <div class="project-summary image">
+            <img src="../images/project_BellAssignment/me360_bell_image.gif" style="width: 50%; padding-right: 15px;">
+            <img src="../images/project_BellAssignment/rmanek_BellAnalysisCAD.png" style="width: 50%; float: right; padding-left: 15px;">
+            <figcaption style="text-align: center;"> 
+                Initial Bell Sketch (left) | Final Bell CAD (right)
+            </figcaption>
+            <img src="../images/project_BellAssignment/rmanek_BellAnalysis_Equation.png" style="width: 100%; float: right; margin-top: 15px;">
+            <figcaption style="text-align: center;"> Bell Analysis Equation </figcaption>
+            <audio controls style="margin-top: 15px; width: 100%;"> 
+                <source src="../files/audio/rmanek_ME360_BellAudio_Recording.mp3" type="audio/mp3">
+                Your browser does not support this audio element
+            </audio>
+            <figcaption style="text-align: center;"> Bell Audio </figcaption>
+
+        </div>
+    </div>
+
+    <div class="project-description section1">
+        <div class="media-gallery">
+            <div class="responsive-gallery">
+                <div class="gallery">
+                    <a target="_blank" href="../images/project_BellAssignment/rmanek_BellAnalysisFEA_Picture1.png">
+                    <img src="../images/project_BellAssignment/rmanek_BellAnalysisFEA_Picture1.png" width="600" height="400">
+                    </a>
+                    <div class="desc">Image 1</div>
+                </div>
+            </div>
+                
+            <div class="responsive-gallery">
+                <div class="gallery">
+                    <a target="_blank" href="../images/project_BellAssignment/rmanek_BellAnalysisFEA_Picture2.png">
+                    <img src="../images/project_BellAssignment/rmanek_BellAnalysisFEA_Picture2.png" width="600" height="400">
+                    </a>
+                    <div class="desc">Image 2</div>
+                </div>
+            </div>
+                
+            <div class="responsive-gallery">
+                <div class="gallery">
+                    <a target="_blank" href="../images/project_BellAssignment/rmanek_BellAnalysisFEA_Picture3.png">
+                    <img src="../images/project_BellAssignment/rmanek_BellAnalysisFEA_Picture3.png" width="600" height="400">
+                    </a>
+                    <div class="desc">Image 3</div>
+                </div>
+            </div>
+            
+            <div class="responsive-gallery">
+                <div class="gallery">
+                    <a target="_blank" href="../images/project_BellAssignment/rmanek_BellAnalysisFEA_Picture4.png">
+                    <img src="../images/project_BellAssignment/rmanek_BellAnalysisFEA_Picture4.png" width="600" height="400">
+                    </a>
+                    <div class="desc">Image 4</div>
+                </div>
+            </div>
+        </div>
+        
+        <iframe src="../files/pdfs/rmanek_ME360_BellAudioCode2.pdf" width="100%" height="750px" style="margin-top:15px;"></iframe>
+
+
+
+
+    </div>
+
+</body>
+</html>
+

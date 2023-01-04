@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Rushan Manek - Portfolio Website </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="header">
+        <div class="navbar">
+            <nav>
+                <img src="images/bu_logo.png" class="logo" >
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/rmanek_portfolio_about_me.html">About Me</a></li>
+                    <li><a href="/rmanek_portfolio_resume.html">Resume</a></li>
+                    <li><a href="rmanek_PortfolioLandingPage.html">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> mechanical engineer. </p>
+                <h1> hi, my name is <br> <span>Rushan</span> Manek </h1>
+            </div>
+        </div>
+    </div>
+
+<!--------------ABOUT----------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/rmanek_headshot.jpg" width="500px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p> Hi my name is Rushan Manek, I am a senior at Boston University and am currently pursuing an undegraduate degree in mechanical engineering along with a concentration in Aerosapce, and a minor in Business & Administration. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span> Machining </span><br> CNC, Laser Cutting, Milling, Turning, 3D Printing, Welding </li>
+                            <li><span> CAD </span><br> Fusion 360, Autodesk Inventor, Creo Parametric, Solidworks, Onshape, FEA </li>
+                            <li><span> Coding </span><br> C, C++, MATLAB, Python, Java, Latex, HTML, CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span> ENG-IT - Tech Support</span><br> Campus wide tech support, responsible for setting up and troubleshooting equipment. </li>
+                            <li><span> Maintenance Engineer - Internship </span><br> Maintained J85 & CF24 engines at US Turbine & Accessory - located in Taylor, MI. </li>
+                            <li><span> Intro to Engineering - Teach Assistant </span><br> Facilitated learning of engineering and design objectives. Additionally, hosted office hours for extra guidance on homework, and group projects. </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> High School - International School of Kenya </span><br> Studied at the International School of Kenya, and took the International Baccalaureate exams. </li>
+                            <li><span> Undergraduate - Boston University </span><br> Mechanical Engineering with a concentration in Aerospace, and a minor is Business Management & Administration. </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------- PORTFOLIO --------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title"> My Work </h2>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/project_AeroSport/aerobatic_sports_plane_background_square.jpeg">
+                    <div class="project-layer">
+                        <a href="portfolio_pages/rmanek_ME408AerobaticSportsPlane_PortfolioPage.html"> Aerobatic Sports Plane </a>
+                        <p> Aerobatic Sports Plane designed during the ME408 class</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project_DoubleWedge/rmanek_ME425_DoubleWedgeLab_InClassExample_square.png">
+                    <div class="project-layer">
+                        <a href="portfolio_pages/rmanek_DoubleWedge_PortfolioPage.html"> Double Wedge Assignment </a>
+                        <p> Analysis of a Double Wedge Airfoil </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project_TrussDesignProject/TrussPracticeProblem_PrinjaliRushanYumin_A2_TrussGraph_square.png">
+                    <div class="project-layer">
+                        <a href="portfolio_pages/rmanek_TrussDesignProject.html"> Truss Design Project </a>
+                        <p> In depth project and analysis of a truss design - as part of EK301 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a href="/rmanek_PortfolioLandingPage.html"><button class="project-seemore-btn"> See More </button></a>
+    </div>
+
+
+
+<!-- THANK YOU --->
+    <div class="thank-you">
+        <p> Thank you for visiting! </p>
+    </div>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");   
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    </body>
+</html>
