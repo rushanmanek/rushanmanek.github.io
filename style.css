@@ -323,8 +323,8 @@ nav ul li a:hover::after{
 .project-summary.row{
     padding-bottom:20px;
     padding-top:20px;
-    padding-left: 5%;
-    padding-right:5%;
+    margin-left: 10%;
+    margin-right:10%;
     display: flex;
     align-items:top;
 }
@@ -352,8 +352,8 @@ nav ul li a:hover::after{
 .project-description{
     margin-top: 20px;
     margin-bottom:20px;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .project-description h2{
@@ -372,6 +372,12 @@ nav ul li a:hover::after{
     border:2px solid #ff004f;
     border-radius: 5px;
     width: 100%;
+}
+
+.project-summary h3{
+    color: #ff004f;
+    font-size: 17px;
+    font-style: italic;
 }
 
 .project-description img{
