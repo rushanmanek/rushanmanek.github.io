@@ -268,25 +268,26 @@ nav ul li a:hover::after{
 
 .portfolio-page.project-row{
     display: flex;
-    align-items:top;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 15px;
     margin-bottom: 15px;
+    margin-top:15px;
     height:250px;
+    align-items: center;
 }
 .portfolio-page.project-column.text{
     flex: 70%;
+    padding: 10%;
 }
 .portfolio-page.project-column.image{
     flex: 30%;
 }
 
-.portfolio-page.project-description a, h2{
+.portfolio-page.project-outline a, h2{
     font-size: 35px;
-    color: #ff004f
+    color: #ff004f;
 }
-.portfolio-page.project-description p{
+.portfolio-page.project-outline p{
     font-size: 20px;
 }
 .portfolio-page.project-image img{
